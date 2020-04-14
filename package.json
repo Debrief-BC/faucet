@@ -2,14 +2,18 @@
   "name": "faucet",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ethereumjs-tx": "^2.1.2",
+    "sleep-promise": "^8.0.1",
     "web3": "^1.2.6"
   }
 }
