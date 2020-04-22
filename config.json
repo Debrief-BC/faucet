@@ -1,0 +1,6 @@
+{
+    "canRequestByUser":true,
+    "requestPeriod":10, 
+    "requestAmount":"1",
+    "totalAmount":"50"
+}
