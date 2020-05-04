@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.7.0;
+pragma solidity >=0.6.6 <0.7.0;
 
 /**
  * @title Ownable
@@ -121,7 +121,7 @@ contract Faucet is Ownable {
         require(requestRecords[requester].add(requestPeriod) <= _now(), "One cycle just can request one time");
     }
 
-    function () external payable{
+    receive () external payable{
         requestFor(msg.sender);
     }
 
